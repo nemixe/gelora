@@ -25,9 +25,9 @@ async function start () {
   app.use(nuxt.render)
 
   // Listen the server
-  app.listen(port, '192.168.1.17')
+  app.listen(port, host)
   consola.ready({
-    message: `Server listening on http://192.168.1.17:${port}`,
+    message: `Server listening on http://${host}:${port}`,
     badge: true
   })
 }
