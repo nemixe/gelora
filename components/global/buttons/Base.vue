@@ -1,11 +1,11 @@
 <template>
   <div>
     <input
-      class="text-lg py-3 rounded-full my-1 shadow"
       :class="{ 'w-full': isfluid, ...typeClasses }"
-      type="button"
       :value="text"
       @click="click"
+      class="text-lg py-3 rounded-full my-1 shadow"
+      type="button"
     >
   </div>
 </template>
@@ -27,14 +27,14 @@ export default {
     },
     click: {
       type: Function,
-      default: function() {}
+      default () {}
     }
   },
-  data: function() {
+  data () {
     return {
       typeClasses: {
         'bg-primary text-white': this.type === 'primary',
-        'bg-white text-gray-500': this.type === 'secondary',
+        'bg-white text-gray-500': this.type === 'secondary'
       }
     }
   }

@@ -8,13 +8,12 @@
         My striking Nuxt.js project
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
+        <nuxt-link
+          :to="'/group/activities'"
           class="button--green"
         >
           Documentation
-        </a>
+        </nuxt-link>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
